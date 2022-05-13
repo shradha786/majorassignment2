@@ -1,0 +1,27 @@
+#%RAML 1.0
+types:
+  shradha:
+    properties:
+      id:
+        example: "1272"
+        type: string
+      name:
+        example: Gorakhanatha Chaturvedi
+        type: string
+      email:
+        example: gorakhanatha_chaturvedi@nitzsche-crist.biz
+        type: string
+      gender:
+        example: female
+        type: string
+      status:
+        example: inactive
+        type: string
+title: shradha mile stone 4
+/milestone4:
+  get:
+    responses:
+      "200":
+        body:
+          application/json:
+            type: shradha

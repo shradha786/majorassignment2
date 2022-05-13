@@ -1,0 +1,32 @@
+#%RAML 1.0
+types:
+  response-_body:
+    items:
+      properties:
+        id:
+          example: 2842
+          type: number
+          format: int
+        name:
+          example: kartick pochar
+          type: string
+        email:
+          example: kartikkochar@gmai.com
+          type: string
+        gender:
+          example: female
+          type: string
+        status:
+          example: inactive
+          type: string
+title: shradha assingment 1
+/milestone1:
+  get:
+    displayName: shradha
+    responses:
+      "200":
+        body:
+          application/json:
+            type: response-_body
+            items:
+              type: object
